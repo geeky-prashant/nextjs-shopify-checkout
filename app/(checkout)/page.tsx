@@ -1,7 +1,6 @@
 
-import Link from "next/link";
 import Image from "next/image";
-import { FOOTER_LINKS, PAYMENT_LINKS } from "@/constants";
+import { PAYMENT_LINKS } from "@/constants";
 import {
   Tooltip,
   TooltipContent,
@@ -11,6 +10,8 @@ import {
 import { HelpCircle } from 'lucide-react';
 import { Checkbox } from "@/components/ui/checkbox"
 import DiscountInput from "./(sections)/discountInput";
+import { Button } from "@/components/ui/button";
+import Footer from "./_components/footer";
 
 const Checkout = () => {
   return (
@@ -65,18 +66,15 @@ const Checkout = () => {
                   </label>
                 </div>
               </div>
+
+              {/* Pay Button  */}
+              <Button
+                className="bg-[#127CBE] hover:bg-[#0f5b8a] h-16 text-lg text-white font-semibold"
+              >Pay now</Button>
             </div>
 
             {/* Bottom Footer  */}
-            <div className="border-t w-full">
-              <div className="flex items-center gap-4 py-6 px-6 text-[#2683C2]">
-                {FOOTER_LINKS.map((data) => (
-                  <Link href={data.href} key={data.key} className="underline">
-                    {data.title}
-                  </Link>
-                ))}
-              </div>
-            </div>
+            <Footer />
           </div>
         </div>
 
