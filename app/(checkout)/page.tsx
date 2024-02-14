@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Image from "next/image";
 import { FOOTER_LINKS, PAYMENT_LINKS } from "@/constants";
@@ -8,8 +9,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { HelpCircle } from 'lucide-react';
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox"
+import DiscountInput from "./(sections)/discountInput";
 
 const Checkout = () => {
   return (
@@ -19,7 +20,8 @@ const Checkout = () => {
         <div className="bg-white w-1/2 h-screen flex justify-end">
           <div className="flex justify-between flex-col max-w-[1280px] w-[80%]">
             {/* Top Content  */}
-            <div className="w-full py-12 px-12">
+            <div className="w-full py-12 px-12 flex flex-col">
+
               {/* Express Checkout  */}
               <div className="flex items-center justify-center flex-col gap-3">
                 <h1 className="text-[#9D9D9D] text-sm">Express Checkout</h1
@@ -38,11 +40,36 @@ const Checkout = () => {
                   }
                 </div>
               </div>
+
+              {/* Shipping Method  */}
+              <div className="w-full flex flex-col gap-3 py-8">
+                <h2 className="text-md font-bold text-black">Shipping method</h2>
+                <div className="flex items-center justify-between p-4 bg-[#F2F7FF] border-[1.5px] border-[#2683C2] rounded-md h-16">
+                  <h3 className="text-black font-medium text-base">Flat Rate Shipping</h3>
+                  <h4 className="text-black font-medium text-base">Free</h4>
+                </div>
+              </div>
+
+              {/* Remember Me  */}
+              <div className="w-full flex flex-col gap-3 pb-8">
+                <h2 className="text-md font-bold text-black">Remember me</h2>
+                <div className="flex items-center space-x-2 p-4 bg-white border-[1.5px] border-[#EFEFEF] rounded-md h-16">
+                  <Checkbox
+                    id="info"
+                  />
+                  <label
+                    htmlFor="info"
+                    className="text-black font-medium text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Save my information for a faster checkout
+                  </label>
+                </div>
+              </div>
             </div>
 
             {/* Bottom Footer  */}
             <div className="border-t w-full">
-              <div className="flex items-center gap-4 py-6 px-0 text-[#2683C2]">
+              <div className="flex items-center gap-4 py-6 px-6 text-[#2683C2]">
                 {FOOTER_LINKS.map((data) => (
                   <Link href={data.href} key={data.key} className="underline">
                     {data.title}
@@ -75,10 +102,7 @@ const Checkout = () => {
             </div>
 
             {/* Discount Input  */}
-            <div className="flex w-full max-w-sm items-center space-x-3">
-              <Input type="text" placeholder="Discount code" />
-              <Button type="button">Apply</Button>
-            </div>
+            <DiscountInput />
 
             {/* Product Pricing  */}
             <div className="w-full flex flex-col gap-3 mt-2">
