@@ -12,6 +12,7 @@ import DiscountInput from "./(sections)/discount-input";
 import { Button } from "@/components/ui/button";
 import Footer from "./_components/footer";
 import ExpressCheckout from "./(sections)/express-checkout";
+import ShippingMethod from "./(sections)/shipping-method";
 
 const Checkout = () => {
   return (
@@ -27,13 +28,7 @@ const Checkout = () => {
               <ExpressCheckout />
 
               {/* Shipping Method  */}
-              <div className="w-full flex flex-col gap-3 py-8">
-                <h2 className="text-md font-bold text-black">Shipping method</h2>
-                <div className="flex items-center justify-between p-4 bg-[#F2F7FF] border-[1.5px] border-[#2683C2] rounded-md h-16">
-                  <h3 className="text-black font-medium text-base">Flat Rate Shipping</h3>
-                  <h4 className="text-black font-medium text-base">Free</h4>
-                </div>
-              </div>
+              <ShippingMethod />
 
               {/* Remember Me  */}
               <div className="w-full flex flex-col gap-3 pb-8">
