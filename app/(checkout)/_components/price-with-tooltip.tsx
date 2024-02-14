@@ -3,8 +3,8 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 interface TooltipProps {
   label: string,
-  amount: number,
-  tooltipContent: string
+  amount: string,
+  tooltipContent?: string
 }
 
 const PriceWithTooltip = ({ label, amount, tooltipContent }: TooltipProps) => {
