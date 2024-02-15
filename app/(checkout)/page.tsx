@@ -1,5 +1,7 @@
 import Footer from "./_components/footer";
 import { Button } from "@/components/ui/button";
+
+import Contact from "./(sections)/contact";
 import RememberMe from "./(sections)/remember-me";
 import ProductInfo from "./(sections)/product-info";
 import DiscountInput from "./(sections)/discount-input";
@@ -19,6 +21,9 @@ const Checkout = () => {
 
               {/* Express Checkout  */}
               <ExpressCheckout />
+
+              {/* Contact  */}
+              <Contact />
 
               {/* Shipping Method  */}
               <ShippingMethod />

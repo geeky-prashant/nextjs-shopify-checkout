@@ -11,7 +11,7 @@ const DiscountInput = () => {
   const handleInputChange = (event: any) => {
     const inputValue = event.target.value;
     setDiscountCode(inputValue);
-    setButtonColor(inputValue ? 'bg-black text-white' : 'bg-[#EDEDED] text-[#666666]');
+    setButtonColor(inputValue ? 'bg-[#127CBE] text-white' : 'bg-[#EDEDED] text-[#666666]');
   };
 
   return (
