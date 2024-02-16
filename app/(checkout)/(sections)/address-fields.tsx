@@ -218,7 +218,7 @@ const AddressFields = () => {
           {/* Pay Button  */}
           <Button
             type="submit"
-            className="w-full bg-[#127CBE] hover:bg-[#0f5b8a] h-16 text-lg text-white font-semibold"
+            className="w-full bg-[#127CBE] hover:bg-[#0f5b8a] h-16 text-lg text-white font-semibold mb-0 !mb-8"
           >Pay now</Button>
         </form>
       </Form>

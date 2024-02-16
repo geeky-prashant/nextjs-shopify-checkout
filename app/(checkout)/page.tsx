@@ -10,12 +10,12 @@ import ExpressCheckout from "./(sections)/express-checkout";
 const Checkout = () => {
   return (
     <div className="bg-white">
-      <div className="flex items-start flex-col md:flex-row">
+      <div className="flex items-start flex-col-reverse md:flex-row">
         {/* Left Col  */}
-        <div className="bg-white w-1/2 h-full flex justify-end">
-          <div className="flex justify-between flex-col max-w-[1280px] w-[80%]">
+        <div className="bg-white w-full md:w-1/2 h-full flex justify-end">
+          <div className="flex justify-between flex-col max-w-[1280px] w-full md:w-[80%]">
             {/* Top Content  */}
-            <div className="w-full py-12 px-12 flex flex-col">
+            <div className="w-full py-6 md:py-12 px-6 md:px-12 flex flex-col">
 
               {/* Express Checkout  */}
               <ExpressCheckout />
@@ -36,8 +36,8 @@ const Checkout = () => {
         </div>
 
         {/* Right Col  */}
-        <div className="bg-[#F5F5F5] absolute right-0 w-1/2 min-h-full">
-          <div className="flex items-start justify-start max-w-[1280px] py-12 px-12 w-[65%] gap-5 flex-col">
+        <div className="bg-[#F5F5F5] block md:absolute right-0 w-full md:w-1/2 min-h-full">
+          <div className="flex items-start justify-start max-w-[1280px] py-6 md:py-12 px-6 md:px-12 w-full md:w-[65%] gap-5 flex-col">
             {/* Product Info  */}
             <ProductInfo />
 

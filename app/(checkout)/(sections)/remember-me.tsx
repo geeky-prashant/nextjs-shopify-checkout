@@ -10,7 +10,7 @@ const RememberMe = () => {
         />
         <label
           htmlFor="info"
-          className="text-black font-medium text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          className="text-black font-medium text-sm md:text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
           Save my information for a faster checkout
         </label>

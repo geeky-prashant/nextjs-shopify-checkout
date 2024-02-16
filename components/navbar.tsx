@@ -14,7 +14,7 @@ const Navbar = () => {
         </Link>
 
         {/* Cart  */}
-        <Link href="/" className="absolute left-0">
+        <Link href="/" className="absolute left-5 md:left-0">
           <HiOutlineShoppingBag
             className="text-[#2683C2] text-xl"
           />

@@ -27,7 +27,7 @@ const Contact = () => {
         />
         <label
           htmlFor="email"
-          className="text-black font-medium text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          className="text-black font-medium text-sm md:text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
           Email me with news and offers
         </label>
