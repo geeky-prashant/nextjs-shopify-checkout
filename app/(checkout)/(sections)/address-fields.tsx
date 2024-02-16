@@ -44,7 +44,7 @@ const AddressFields = () => {
         <form onSubmit={form.handleSubmit(onSubmit)}>
 
           {/* Country/Region  */}
-          <div className="grid grid-cols-1 gap-3 pt-8">
+          <div className="grid grid-cols-1 gap-3 pt-8 pb-4">
             <Select>
               <SelectTrigger className="w-full">
                 <SelectValue
@@ -59,7 +59,7 @@ const AddressFields = () => {
           </div>
 
           {/* First Name and Last Name  */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pb-4">
             <FormField
               control={form.control}
               name="fName"
@@ -96,7 +96,7 @@ const AddressFields = () => {
           </div>
 
           {/* Company and Address  */}
-          <div className="grid grid-cols-1 gap-3">
+          <div className="grid grid-cols-1 gap-3 pb-4">
             <FormField
               control={form.control}
               name="company"
@@ -133,7 +133,7 @@ const AddressFields = () => {
           </div>
 
           {/* City, Province and Postal Code  */}
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 gap-3 pb-4">
             <FormField
               control={form.control}
               name="city"
