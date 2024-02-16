@@ -21,7 +21,7 @@ const Contact = () => {
 
         />
       </div>
-      <div className="flex items-center space-x-2 p-4 bg-white border-[1.5px] border-[#EFEFEF] rounded-md h-16">
+      <div className="flex items-center space-x-2 mt-1">
         <Checkbox
           id="info"
         />
@@ -29,7 +29,7 @@ const Contact = () => {
           htmlFor="info"
           className="text-black font-medium text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
-          Save my information for a faster checkout
+          Email me with news and offers
         </label>
       </div>
     </div>
