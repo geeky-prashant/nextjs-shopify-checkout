@@ -21,4 +21,14 @@ export const formSchema = z.object({
     message: "Postal is required",
   }),
   phone: z.string().min(1).max(10),
+  cardnumber: z.string().min(1).max(12),
+  expiry: z.string().min(1, {
+    message: "Expiry is required",
+  }),
+  security: z.string().min(1, {
+    message: "Security is required",
+  }),
+  nameoncard: z.string().min(1, {
+    message: "Name on Card is required",
+  }),
 });

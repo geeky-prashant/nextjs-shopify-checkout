@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { Label } from "@/components/ui/label";
+import CardDetails from '../_components/card-details';
 
 const Payment = () => {
   const [selectedValue, setSelectedValue] = useState("creditcard");
@@ -44,6 +45,13 @@ const Payment = () => {
             />
           </Label>
         </div>
+
+        {/* Box to open under Credit Card when active */}
+        {selectedValue === "creditcard" && (
+          <div className="w-full bg-[#F4F4F4] p-4">
+            <CardDetails />
+          </div>
+        )}
 
         {/* Paypal  */}
         <div className="w-full flex items-center justify-center bg-white rounded-md h-full">
