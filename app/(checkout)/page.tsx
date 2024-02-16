@@ -8,6 +8,7 @@ import DiscountInput from "./(sections)/discount-input";
 import ProductPricing from "./(sections)/product-pricing";
 import ShippingMethod from "./(sections)/shipping-method";
 import ExpressCheckout from "./(sections)/express-checkout";
+import Delivery from "./(sections)/delivery";
 
 const Checkout = () => {
   return (
@@ -24,6 +25,9 @@ const Checkout = () => {
 
               {/* Contact  */}
               <Contact />
+
+              {/* Delivery  */}
+              <Delivery />
 
               {/* Shipping Method  */}
               <ShippingMethod />
