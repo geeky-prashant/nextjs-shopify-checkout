@@ -23,10 +23,10 @@ const Contact = () => {
       </div>
       <div className="flex items-center space-x-2 mt-1">
         <Checkbox
-          id="info"
+          id="email"
         />
         <label
-          htmlFor="info"
+          htmlFor="email"
           className="text-black font-medium text-base leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
           Email me with news and offers

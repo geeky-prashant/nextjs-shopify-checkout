@@ -5,7 +5,7 @@ import { Truck } from 'lucide-react';
 import { Store } from 'lucide-react';
 import { Label } from "@/components/ui/label";
 
-const CustomRadioGroup = () => {
+const Delivery = () => {
   const [selectedValue, setSelectedValue] = useState("ship");
 
   const handleChange = (value: any) => {
@@ -17,6 +17,7 @@ const CustomRadioGroup = () => {
       <h2 className="text-xl font-bold text-black">Delivery</h2>
       <div className="w-full flex flex-col items-start justify-start bg-white border-[1.5px] border-[#EFEFEF] rounded-md h-full">
 
+        {/* Ship  */}
         <div className="w-full flex items-center justify-center bg-white rounded-md h-full">
           <input
             type="radio"
@@ -42,6 +43,7 @@ const CustomRadioGroup = () => {
           </Label>
         </div>
 
+        {/* Pickup  */}
         <div className="w-full flex items-center justify-center bg-white rounded-md h-full">
           <input
             type="radio"
@@ -71,4 +73,4 @@ const CustomRadioGroup = () => {
   );
 };
 
-export default CustomRadioGroup;
+export default Delivery;

@@ -1,14 +1,15 @@
 import Footer from "./_components/footer";
 import { Button } from "@/components/ui/button";
 
+import Payment from "./(sections)/payment";
 import Contact from "./(sections)/contact";
+import Delivery from "./(sections)/delivery";
 import RememberMe from "./(sections)/remember-me";
 import ProductInfo from "./(sections)/product-info";
 import DiscountInput from "./(sections)/discount-input";
 import ProductPricing from "./(sections)/product-pricing";
 import ShippingMethod from "./(sections)/shipping-method";
 import ExpressCheckout from "./(sections)/express-checkout";
-import Delivery from "./(sections)/delivery";
 
 const Checkout = () => {
   return (
@@ -31,6 +32,9 @@ const Checkout = () => {
 
               {/* Shipping Method  */}
               <ShippingMethod />
+
+              {/* Payment  */}
+              <Payment />
 
               {/* Remember Me  */}
               <RememberMe />
