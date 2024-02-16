@@ -18,7 +18,7 @@ const Contact = () => {
         <Input
           type="text"
           placeholder="Email"
-
+          className="text-sm rounded-md border-[1.5px] border-[#EFEFEF]"
         />
       </div>
       <div className="flex items-center space-x-2 mt-1">

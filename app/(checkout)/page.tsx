@@ -1,14 +1,10 @@
 import Footer from "./_components/footer";
-import { Button } from "@/components/ui/button";
-
-import Payment from "./(sections)/payment";
 import Contact from "./(sections)/contact";
 import Delivery from "./(sections)/delivery";
-import RememberMe from "./(sections)/remember-me";
 import ProductInfo from "./(sections)/product-info";
+import AddressFields from "./(sections)/address-fields";
 import DiscountInput from "./(sections)/discount-input";
 import ProductPricing from "./(sections)/product-pricing";
-import ShippingMethod from "./(sections)/shipping-method";
 import ExpressCheckout from "./(sections)/express-checkout";
 
 const Checkout = () => {
@@ -30,19 +26,8 @@ const Checkout = () => {
               {/* Delivery  */}
               <Delivery />
 
-              {/* Shipping Method  */}
-              <ShippingMethod />
-
-              {/* Payment  */}
-              <Payment />
-
-              {/* Remember Me  */}
-              <RememberMe />
-
-              {/* Pay Button  */}
-              <Button
-                className="bg-[#127CBE] hover:bg-[#0f5b8a] h-16 text-lg text-white font-semibold"
-              >Pay now</Button>
+              {/* Address Fields  */}
+              <AddressFields />
             </div>
 
             {/* Bottom Footer  */}

@@ -1,10 +1,8 @@
 "use client"
 
-import { useState } from 'react';
-import { Truck } from 'lucide-react';
-import { Store } from 'lucide-react';
-import { Label } from "@/components/ui/label";
 import Image from 'next/image';
+import { useState } from 'react';
+import { Label } from "@/components/ui/label";
 
 const Payment = () => {
   const [selectedValue, setSelectedValue] = useState("creditcard");
