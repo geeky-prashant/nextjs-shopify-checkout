@@ -41,7 +41,7 @@ const AddressFields = () => {
   return (
     <div>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={form.handleSubmit(onSubmit)}>
 
           {/* Country/Region  */}
           <div className="grid grid-cols-1 gap-3 pt-8">
